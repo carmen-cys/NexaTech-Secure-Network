@@ -102,23 +102,32 @@ A successful HTTP/HTTPS test validates the tested application path; it does not 
 
 ## Screenshots
 
-The `screenshots/` directory contains the topology overview, floor views, core/edge path, VLAN and IP-addressing evidence, internal website, Guest policy, SSH management, outbound PAT, and public HTTP/HTTPS tests.
+The [`screenshots/`](screenshots/) directory contains the visual evidence for the network topology, configuration, services, and security validation.
 
-- `topology-overview.png`
-- `floor1.png`, `floor2.png`, `floor3.png`
-- `edge-security.png`
-- `vlans.png`, `ip-addressing.png`
-- `internal-website.png`
-- `guest-denied-to-hr.png`
-- `guest-allowed-web.png`
-- `ssh-management.png`
-- `outbound-pat.png`
-- `public-http.png`, `public-https.png`
+**Topology and infrastructure**
+- [Overall topology](screenshots/topology-overview.png)
+- [Floor 1](screenshots/floor1.png)
+- [Floor 2](screenshots/floor2.png)
+- [Floor 3](screenshots/floor3.png)
+- [Core, edge, firewall, and ISP](screenshots/edge-security.png)
+
+**Network configuration**
+- [VLAN configuration](screenshots/vlans.png)
+- [IP addressing](screenshots/ip-addressing.png)
+
+**Services and security validation**
+- [Internal website](screenshots/internal-website.png)
+- [Guest access denied to HR](screenshots/guest-denied-to-hr.png)
+- [Guest access to Web Server allowed](screenshots/guest-allowed-web.png)
+- [SSH management](screenshots/ssh-management.png)
+- [Outbound PAT](screenshots/outbound-pat.png)
+- [Public HTTP access](screenshots/public-http.png)
+- [Public HTTPS access](screenshots/public-https.png)
 
 ## Open the project
 
 1. Install Cisco Packet Tracer 9.0.1 or a compatible version.
-2. Download `packet-tracer/NexaTech_Secure_Network.pkt` from this repository.
+2. Download the [Packet Tracer simulation file](packet-tracer/NexaTech_Secure_Network.pkt) from this repository.
 3. Open the file in Packet Tracer and inspect the Logical workspace.
 4. Use the screenshots and documentation to explore the topology and validation scenarios.
 
@@ -128,13 +137,12 @@ This is an educational Packet Tracer simulation. It does not establish real-worl
 
 ## Repository contents
 
-- `packet-tracer/NexaTech_Secure_Network.pkt` — Packet Tracer simulation file
-- `screenshots/` — topology and test evidence
-- `docs/network-design.md` — architecture, infrastructure links, servers, routing, and NAT
-- `docs/subnetting-vlsm.md` — subnet masks, usable ranges, VLSM allocations, and sizing rationale
-- `docs/security-controls.md` — ACL, SSH, NAT, and firewall policy summary
-- `docs/testing-results.md` — validation scenarios and observed outcomes
-
+- [`packet-tracer/NexaTech_Secure_Network.pkt`](packet-tracer/NexaTech_Secure_Network.pkt) — Packet Tracer simulation file
+- [`screenshots/`](screenshots/) — topology and test evidence
+- [`docs/network-design.md`](docs/network-design.md) — architecture, infrastructure links, servers, routing, and NAT
+- [`docs/subnetting-vlsm.md`](docs/subnetting-vlsm.md) — subnet masks, usable ranges, VLSM allocations, and sizing rationale
+- [`docs/security-controls.md`](docs/security-controls.md) — ACL, SSH, NAT, and firewall policy summary
+- [`docs/testing-results.md`](docs/testing-results.md) — validation scenarios and observed outcomes
 ---
 
 Built as a hands-on learning and portfolio project focused on enterprise networking and practical network security.
